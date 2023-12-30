@@ -1,6 +1,8 @@
-![image] (https://file%252B.vscode-resource.vscode-cdn.net/Users/serg/CODING/goit/algorythms/task_4/results.png?version%253D1703972413325)
+## Висновки
 
 Виходячи з отриманих результатів можна зробити наступний висновок:
 - найшвидший вид сортування - **sorted**. Часова складність такого сортування - **O(logn)**.
 - повільнішим ніж **sorted** є сортування **insertion_sort**. Часова складність - **O(n)**.
 - найповільнішим видом сортування з розглянутих є merge_sort. Часова складність - **О(n*logn)**.
+
+![alt text](https://github.com/sergiishevchenko/goit-algo-hw-04/blob/main/results.png)
