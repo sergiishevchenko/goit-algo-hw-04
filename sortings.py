@@ -1,6 +1,5 @@
 import timeit
 import random
-import string
 
 
 def merge_sort(arr):
@@ -71,19 +70,19 @@ for _ in range(200):
 
 
 # merge_sort()
-print('merge_sort() for 10: {} sec'.format({timeit.timeit('[merge_sort(ten_elements)]', globals=globals())}))
-print('merge_sort() for 20: {} sec'.format({timeit.timeit('[merge_sort(twenty_elements)]', globals=globals())}))
-print('merge_sort() for 100: {} sec'.format({timeit.timeit('[merge_sort(hundred_elements)]', globals=globals())}))
-print('merge_sort() for 200: {} sec'.format({timeit.timeit('[merge_sort(two_hundred_elements)]', globals=globals())}))
+print('merge_sort() for 10: {} sec'.format(round(timeit.timeit('[merge_sort(ten_elements)]', number=1, globals=globals()), 5)))
+print('merge_sort() for 20: {} sec'.format(round(timeit.timeit('[merge_sort(twenty_elements)]', number=1, globals=globals()), 5)))
+print('merge_sort() for 100: {} sec'.format(round(timeit.timeit('[merge_sort(hundred_elements)]', number=1, globals=globals()), 5)))
+print('merge_sort() for 200: {} sec'.format(round(timeit.timeit('[merge_sort(two_hundred_elements)]', number=1, globals=globals()), 5)))
 
 # insertion_sort()
-print('insertion_sort() for 10: {} sec'.format({timeit.timeit('[insertion_sort(ten_elements)]', globals=globals())}))
-print('insertion_sort() for 20: {} sec'.format({timeit.timeit('[insertion_sort(twenty_elements)]', globals=globals())}))
-print('insertion_sort() for 100: {} sec'.format({timeit.timeit('[insertion_sort(hundred_elements)]', globals=globals())}))
-print('insertion_sort() for 200: {} sec'.format({timeit.timeit('[insertion_sort(two_hundred_elements)]', globals=globals())}))
+print('insertion_sort() for 10: {} sec'.format(round(timeit.timeit('[insertion_sort(ten_elements)]', number=1, globals=globals()), 6)))
+print('insertion_sort() for 20: {} sec'.format(round(timeit.timeit('[insertion_sort(twenty_elements)]', number=1, globals=globals()), 6)))
+print('insertion_sort() for 100: {} sec'.format(round(timeit.timeit('[insertion_sort(hundred_elements)]', number=1, globals=globals()), 6)))
+print('insertion_sort() for 200: {} sec'.format(round(timeit.timeit('[insertion_sort(two_hundred_elements)]', number=1, globals=globals()), 6)))
 
 # merge()
-print('Sorted() for 10: {} sec'.format({timeit.timeit('[sorted(ten_elements)]', globals=globals())}))
-print('Sorted() for 20: {} sec'.format({timeit.timeit('[sorted(twenty_elements)]', globals=globals())}))
-print('Sorted() for 100: {} sec'.format({timeit.timeit('[sorted(hundred_elements)]', globals=globals())}))
-print('Sorted() for 200: {} sec'.format({timeit.timeit('[sorted(two_hundred_elements)]', globals=globals())}))
+print('Sorted() for 10: {} sec'.format(round(timeit.timeit('[sorted(ten_elements)]', number=1, globals=globals()), 7)))
+print('Sorted() for 20: {} sec'.format(round(timeit.timeit('[sorted(twenty_elements)]', number=1, globals=globals()), 7)))
+print('Sorted() for 100: {} sec'.format(round(timeit.timeit('[sorted(hundred_elements)]', number=1, globals=globals()), 7)))
+print('Sorted() for 200: {} sec'.format(round(timeit.timeit('[sorted(two_hundred_elements)]', number=1, globals=globals()), 7)))
